@@ -1,5 +1,5 @@
 export default {
-  LOGIN: 'Login',
+  ListShayari: 'ListShayari',
   REGISTER: 'Register',
   FORGOT_PASSWORD: 'Forgot Password',
 
