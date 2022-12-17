@@ -43,6 +43,10 @@ const styles = StyleSheet.create({
     borderColor: COLORS.white,
     borderWidth: 1,
     borderRadius: 20,
+    flex: 1,
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
   },
   logo: {
     height: 120,
@@ -53,5 +57,8 @@ const styles = StyleSheet.create({
     color: COLORS.white,
     fontSize: 20,
     textAlign: "center",
+    marginTop: 10,
+    borderColor: COLORS.white,
+    // borderWidth: 1,
   },
 });

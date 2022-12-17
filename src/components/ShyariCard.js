@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import React from "react";
+import React, { memo } from "react";
 import { COLORS } from "../constants";
 import { FontAwesome, FontAwesome5 } from "@expo/vector-icons";
 import * as Clipboard from "expo-clipboard";
@@ -51,7 +51,7 @@ const ShyariCard = ({ title }) => {
   );
 };
 
-export default ShyariCard;
+export default memo(ShyariCard);
 
 const styles = StyleSheet.create({
   main: {
