@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "LatestHindiShayari",
+    "name": "Latest Hindi Shayari",
     "slug": "LatestHindiShayari",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -14,9 +14,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -25,7 +23,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.alishandev.LatestHindiShayari"
+      "package": "com.alishandev.LatestHindiShayari",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"

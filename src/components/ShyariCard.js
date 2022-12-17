@@ -26,7 +26,7 @@ const ShyariCard = ({ title }) => {
   };
 
   const tweetNow = () => {
-    const url = "https://twitter.com/intent/tweet?text=" + "quote";
+    const url = "https://twitter.com/intent/tweet?text=" + title;
     Linking.openURL(url);
   };
   return (
