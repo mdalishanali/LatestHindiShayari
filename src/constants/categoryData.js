@@ -5,6 +5,26 @@ export const CATEGORY_DATA = [
     logo: IMGS.love,
   },
   {
+    name: "Romantic Shayari",
+    logo: IMGS.romanticIcon,
+  },
+  {
+    name: "Hindi Shayari",
+    logo: IMGS.hindiIcon,
+  },
+  {
+    name: "Dard Shayari",
+    logo: IMGS.dardIcon,
+  },
+  {
+    name: "Sad Shayari",
+    logo: IMGS.sad,
+  },
+  {
+    name: "Two Line Shayari",
+    logo: IMGS.twoLineIcon,
+  },
+  {
     name: "Dosti Shayari",
     logo: IMGS.friend,
   },
@@ -14,38 +34,20 @@ export const CATEGORY_DATA = [
   },
   {
     name: "Attitude Shayari",
-    logo: IMGS.alone,
+    logo: IMGS.attitudeIcon,
   },
   {
     name: "Bewafa Shayari",
-    logo: IMGS.alone,
+    logo: IMGS.bewafaIcon,
   },
-  {
-    name: "Dard Shayari",
-    logo: IMGS.alone,
-  },
-  {
-    name: "Hindi Shayari",
-    logo: IMGS.alone,
-  },
+
   {
     name: "Motivational Shayari",
-    logo: IMGS.alone,
+    logo: IMGS.motivationIcon,
   },
-  {
-    name: "Romantic Shayari",
-    logo: IMGS.alone,
-  },
+
   {
     name: "Gulzaar Shayari",
-    logo: IMGS.alone,
-  },
-  {
-    name: "Sad Shayari",
-    logo: IMGS.alone,
-  },
-  {
-    name: "Two Line Shayari",
-    logo: IMGS.alone,
+    logo: IMGS.gulzaar,
   },
 ];
