@@ -1,4 +1,4 @@
-export const bewafa = [
+export const bewafaShayari = [
   {
     title:
       "तेरा ख्याल दिल से मिटाया नहीं अभी,बेवफ़ा मैंने तुझको भुलाया नही अभी।",

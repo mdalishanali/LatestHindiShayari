@@ -1,4 +1,4 @@
-export const dardShyari = [
+export const dardShayari = [
   {
     title:
       "खुद ही रोए और खुद ही चुप हो गए,ये सोचकर की कोई अपना होता तो रोने ना देता!!",

@@ -14,14 +14,14 @@ import * as Clipboard from "expo-clipboard";
 
 const ShyariCard = ({ title }) => {
   const copyToClipboard = async () => {
-    await Clipboard.setStringAsync("hello world");
-    ToastAndroid.show("Copied!", ToastAndroid.BOTTOM);
+    await Clipboard.setStringAsync(title);
+    ToastAndroid.show("Copy successfully!", ToastAndroid.BOTTOM);
   };
 
   const socialShare = async () => {
     await Share.share({
       title: "Shayari",
-      message: "quote",
+      message: title,
     });
   };
 
