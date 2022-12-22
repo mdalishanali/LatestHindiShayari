@@ -6,6 +6,7 @@ import {
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StatusBar } from "expo-status-bar";
 import { View } from "react-native";
+import BannerAdsComp from "./src/components/BannerAdsComp";
 
 import { COLORS, ROUTES } from "./src/constants/index";
 import { Home, ListShayari } from "./src/screens";
@@ -19,31 +20,34 @@ const MyTheme = {
 
 export default function App() {
   return (
-    <NavigationContainer theme={MyTheme}>
-      <StatusBar style="light" backgroundColor={COLORS.statusbar} />
-      <Stack.Navigator
-        screenOptions={{
-          headerStyle: {
-            backgroundColor: COLORS.secondery,
-          },
-          headerTintColor: COLORS.white,
-        }}
-      >
-        <Stack.Screen
-          name={ROUTES.HOME}
-          component={Home}
-          options={({ route }) => ({
-            title: "Latest Hindi Shayari",
-          })}
-        />
-        <Stack.Screen
-          name={ROUTES.ListShayari}
-          component={ListShayari}
-          options={({ route }) => ({
-            title: route.params.category,
-          })}
-        />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <>
+      <NavigationContainer theme={MyTheme}>
+        <StatusBar style="light" backgroundColor={COLORS.statusbar} />
+        <Stack.Navigator
+          screenOptions={{
+            headerStyle: {
+              backgroundColor: COLORS.secondery,
+            },
+            headerTintColor: COLORS.white,
+          }}
+        >
+          <Stack.Screen
+            name={ROUTES.HOME}
+            component={Home}
+            options={({ route }) => ({
+              title: "Latest Hindi Shayari",
+            })}
+          />
+          <Stack.Screen
+            name={ROUTES.ListShayari}
+            component={ListShayari}
+            options={({ route }) => ({
+              title: route.params.category,
+            })}
+          />
+        </Stack.Navigator>
+      </NavigationContainer>
+      <BannerAdsComp />
+    </>
   );
 }

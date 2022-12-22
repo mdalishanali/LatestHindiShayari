@@ -20,6 +20,7 @@ import { romanticShayari } from "../shyariDB/romantic";
 import { gulzaarShayari } from "../shyariDB/gulzaar";
 import { sadShayari } from "../shyariDB/sad";
 import { twoLineShayari } from "../shyariDB/twoLine";
+import InterstitialAdComponent from "../components/InrestialAdsComp";
 
 const ListShayari = () => {
   const route = useRoute();
@@ -72,14 +73,19 @@ const ListShayari = () => {
   const getItem = (data, index) => data[index];
 
   return (
-    <VirtualizedList
-      data={data}
-      initialNumToRender={4}
-      renderItem={({ item }) => <ShyariCard title={item.title} key={item.id} />}
-      keyExtractor={(item, index) => index}
-      getItemCount={(data) => data.length}
-      getItem={getItem}
-    />
+    <>
+      <InterstitialAdComponent />
+      <VirtualizedList
+        data={data}
+        initialNumToRender={4}
+        renderItem={({ item }) => (
+          <ShyariCard title={item.title} key={item.id} />
+        )}
+        keyExtractor={(item, index) => index}
+        getItemCount={(data) => data.length}
+        getItem={getItem}
+      />
+    </>
   );
 };
 

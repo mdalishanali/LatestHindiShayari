@@ -16,13 +16,15 @@ import { CATEGORY_DATA } from "../constants/categoryData";
 
 const Home = () => {
   return (
-    <ScrollView style={styles.scrollView}>
-      <View style={styles.container}>
-        {CATEGORY_DATA.map((item, ind) => (
-          <Card item={item} key={ind} />
-        ))}
-      </View>
-    </ScrollView>
+    <>
+      <ScrollView style={styles.scrollView}>
+        <View style={styles.container}>
+          {CATEGORY_DATA.map((item, ind) => (
+            <Card item={item} key={ind} />
+          ))}
+        </View>
+      </ScrollView>
+      </>
   );
 };
 
